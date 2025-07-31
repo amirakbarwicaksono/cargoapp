@@ -25,6 +25,27 @@ func RegisterRoutes(router *gin.Engine) {
 		api.POST("/login", handlers.Login)
 		api.POST("/subpages", handlers.GetSubpages)
 		api.GET("/dashboard-data", handlers.GetDashboardData) // New endpoint
-g                        // Converted from http.HandleFunc
+		// api.GET("/getUploadLogs", handlers.GetUploadLogs) // Ensure handlers.GetUploadLogs is defined and does not reference undefined 'g'
+		// api.GET("/getUpdateLogs", handlers.GetUpdateLogs)                 // Converted from http.HandleFunc
+		// api.POST("/uploadData", handlers.UploadData)                      // Converted from http.HandleFu
+		// api.POST("/saveDateRange", handlers.SaveDateRange)                // Converted from http.HandleFunc
+		// api.GET("/lookupAndSave", handlers.LookupAndSave)                 // Converted from http.HandleFunc
+		// api.GET("/lookupAndSave1", handlers.LookupAndSave1)               // Converted from http.HandleFunc
+		// api.GET("/exportCSV", handlers.ExportCSV)                         // Converted from http.HandleFunc
+		// api.GET("/exportCSV1", handlers.ExportCSV1)                       // Converted from http.HandleFunc
+		// api.GET("/fetchHeadersAndExport", handlers.FetchHeadersAndExport) // Converted from http.HandleFunc
+		// api.GET("/dashboardSummary", handlers.DashboardSummary)
+		// api.GET("/dashboardDetailed", handlers.DashboardDetailed)
+		// api.GET("/dashboardManagement", handlers.DashboardManagement)               // Converted from http.HandleFunc
+		// api.POST("/stopProcess", handlers.StopProcess)                              // Converted from http.HandleFunc
+		// api.POST("/stopExportProcess", handlers.StopExportProcess)                  // Converted from http.HandleFunc
+		// api.GET("/getSSRData1", handlers.GetSSRData1)                               // Converted from http.HandleFunc
+		// api.GET("/getSSRFilterOptions", handlers.GetSSRFilterOptions)               // Converted from http.HandleFunc
+		// api.GET("/exportFilteredCSV", handlers.ExportFilteredCSV)                   // Converted from http.HandleFunc
+		// api.GET("/CompareFprAndClr", handlers.CompareFprAndClr)                     // Converted from http.HandleFunc
+		// api.GET("/ExportCSVFprAndClr", handlers.ExportCSVFprAndClr)                 // Converted from http.HandleFunc
+		// api.GET("/ExportFprClrDetailMismatch", handlers.ExportFprClrDetailMismatch) // Converted from http.HandleFunc
+		// api.GET("/dashboardfpr", handlers.GetDashboardFpr)                          // Converted from http.HandleFunc
+		// api.GET("/dashboardclr", handlers.GetDashboardClr)                          // Converted from http.HandleFunc
 	}
 }
